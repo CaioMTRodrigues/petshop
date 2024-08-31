@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop - Sistema</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #d0f0c0;
+            color: #333;
+            padding: 10px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header img {
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .section {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+            font-weight: normal;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .section-footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #333;
+        }
+        .section-footer a {
+            text-decoration: none;
+            color: #333;
+        }
+        footer {
+            background-color: #d0f0c0;
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 2px solid #333;
+        }
+        footer .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        footer .footer-links a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        footer .footer-links a:hover {
+            text-decoration: underline;
+        }
+        footer .social-media a {
+            margin: 0 10px;
+        }
+        footer .social-media img {
+            height: 24px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logopetshpo.jpg" alt="Logo de Animais"> 
+        <h1>Petshop - Sistema</h1>
+        <nav>
+            <ul>
+                <li><a href="Clientes/listar_clientes.php">Clientes</a></li>
+                <li><a href="Produtos/listar_produtos.php">Produtos</a></li>
+                <li><a href="Serviços/listar_serviços.php">Serviços</a></li>
+                <li><a href="Animais/listar_animais.php">Animais</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="clientes" class="section">
+            <h2>Clientes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>João Silva</td>
+                        <td>joao.silva@example.com</td>
+                        <td>(11) 98765-4321</td>
+                    </tr>
+                    <!-- Mais linhas aqui -->
+                </tbody>
+            </table>
+            <div class="section-footer"><a href="./Clientes/">Clientes</a></div>
+        </div>
+       
+        <div id="produtos" class="section">
+            <h2>Produtos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ração para Cães</td>
+                        <td>R$ 50,00</td>
+                        <td>100</td>
+                    </tr>
+                    <!-- Mais linhas aqui -->
+                </tbody>
+            </table>
+            <div class="section-footer"><a href="./Produtos/">Produtos</a></div>
+        </div>
+        
+        <div id="servicos" class="section">
+            <h2>Serviços</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Tosa</td>
+                        <td>Serviço de tosa para cães e gatos.</td>
+                        <td>R$ 80,00</td>
+                    </tr>
+                    <!-- Mais linhas aqui -->
+                </tbody>
+            </table>
+            <div class="section-footer"><a href="./Serviços/">Serviços</a></div>
+        </div>
+      
+        <div id="animais" class="section">
+            <h2>Animais</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Espécie</th>
+                        <th>Raça</th>
+                        <th>Cliente</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Rex</td>
+                        <td>Cão</td>
+                        <td>Labrador</td>
+                        <td>João Silva</td>
+                    </tr>
+                    <!-- Mais linhas aqui -->
+                </tbody>
+            </table>
+            <div class="section-footer"><a href="./Animais/">Animais</a></div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Início</a>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Contato</a>
+                <a href="#">Política de Privacidade</a>
+            </div>
+            <div class="social-media mt-3">
+                <a href="https://www.facebook.com/SeuPerfil" target="_blank"><img src="logofacebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com/SeuPerfil" target="_blank"><img src="logotwiter.jpg" alt="Twitter"></a>
+                <a href="https://www.instagram.com/SeuPerfil" target="_blank"><img src="logoinstagram.jpg" alt="Instagram"></a>
+            </div>
+            <p class="mt-3">© 2024 Petshop - Todos os direitos reservados.</p>
+            <p>Endereço: Rua Exemplo, 123 - Bairro - Cidade - Estado - CEP 12345-678</p>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Email: contato@petshop.com.br</p>
+        </div>
+    </footer>
+</body>
+</html>

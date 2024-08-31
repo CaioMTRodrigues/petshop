@@ -1,0 +1,21 @@
+ <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Início</a>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Contato</a>
+                <a href="#">Política de Privacidade</a>
+            </div>
+            <div class="social-media mt-3">
+                <a href="https://www.facebook.com/SeuPerfil" target="_blank"><img src="logofacebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com/SeuPerfil" target="_blank"><img src="logotwiter.jpg" alt="Twitter"></a>
+                <a href="https://www.instagram.com/SeuPerfil" target="_blank"><img src="logoinstagram.jpg" alt="Instagram"></a>
+            </div>
+            <p class="mt-3">© 2024 Petshop - Todos os direitos reservados.</p>
+            <p>Endereço: Rua Exemplo, 123 - Bairro - Cidade - Estado - CEP 12345-678</p>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Email: contato@petshop.com.br</p>
+        </div>
+    </footer>
+</body>
+</html>
